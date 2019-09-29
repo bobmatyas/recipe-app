@@ -1,9 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export const MealType = (props) => 
 
-  <div className={props.styleName}>
-    <h2>{props.mealType}</h2>
-  </div>
+    <div className={props.styleName}>
+      <h2><Link to={props.mealType}>{props.mealType}</Link></h2>
+    </div>
 
 export default MealType;
