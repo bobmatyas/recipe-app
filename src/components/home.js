@@ -8,22 +8,22 @@ export const Home = () =>
 
     <MealType 
           styleName="breakfast" 
-          mealType="breakfast"
+          mealType="Breakfast"
         />
 
         <MealType 
           styleName="lunch" 
-          mealType="lunch"
+          mealType="Lunch"
         />
 
         <MealType 
           styleName="dinner" 
-          mealType="dinner"
+          mealType="Dinner"
         />
 
         <MealType 
           styleName="snack" 
-          mealType="snack"
+          mealType="Snack"
         />
     </div>
 
