@@ -1,30 +1,19 @@
 import React from 'react';
-import MealType from './meal-type';
+import {Link} from 'react-router-dom';
+import RandomDisplay from './random-display';
 
 export const Home = () => 
 
   <div>
     <h2>Home</h2>
+    
+    <Link to="/breakfast">breakfast test</Link>
 
-    <MealType 
-          styleName="breakfast" 
-          mealType="Breakfast"
-        />
+    
 
-        <MealType 
-          styleName="lunch" 
-          mealType="Lunch"
-        />
+        <h2>Recipes to Try</h2>
+        <RandomDisplay />
 
-        <MealType 
-          styleName="dinner" 
-          mealType="Dinner"
-        />
-
-        <MealType 
-          styleName="snack" 
-          mealType="Snack"
-        />
     </div>
 
 export default Home;

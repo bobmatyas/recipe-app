@@ -17,10 +17,8 @@ function Breakfast() {
     //console.log(result.data);
   }
 
-  useEffect( () => {
-    
+  useEffect( () => {  
     getRecipes();
-
   }, []);
 
   console.log(data);
