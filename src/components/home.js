@@ -1,19 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import RandomDisplay from './random-display';
+import FoodTrivia from './food-trivia';
+import Search from './search';
 
 export const Home = () => 
 
   <div>
     <h2>Home</h2>
+
+    <FoodTrivia />
     
-    <Link to="/breakfast">breakfast test</Link>
+    <Search />
 
-    
+    <h2>Recipes to Try</h2>
+      
+      <RandomDisplay />
 
-        <h2>Recipes to Try</h2>
-        <RandomDisplay />
-
-    </div>
+  </div>
 
 export default Home;
