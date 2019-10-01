@@ -9,7 +9,8 @@ class Breakfast extends Component {
     super();
     this.state = {
       results: [],
-      loading: true
+      loading: true,
+      error: false
     };
   }
 
@@ -20,28 +21,35 @@ class Breakfast extends Component {
     const recipeSearchBase = 'https://api.edamam.com/search?app_id=413bfa1c&app_key=a3b6b06160224886fc0b6e8a1a5b822a&health=vegan';
     
     const recipeSearchString = `${recipeSearchBase}&q=${query}`
-
-    console.log(recipeSearchString);
-    const result = await Axios(
-      recipeSearchString,
-    );
-    console.log(result.data);
-    this.setState({
-      results: result.data,
-      loading: false
-    });
+    console.log(recipeSearchString);    
+    
+    Axios.get(recipeSearchString)
+      .then((response) => {
+        this.setState({
+          results: response.data,
+          loading: false
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        this.setState({
+          error: true
+        })
+      }
+      )
   }
 
 
   render() {
 
     return ( 
-      <div className = "App">
+      <div>
         <SearchRecipes onSearch = {this.performSearch} /> 
         <div> 
           {
-            (this.state.loading) ? <p>Loading</p> : <RecipeList results={this.state.results} /> 
+            (this.state.loading) ? '' : <RecipeList results={this.state.results} /> 
           } 
+          { this.state.error ? <div>Error</div> : '' }
         </div> 
       </div>
     );
