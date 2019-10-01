@@ -8,7 +8,7 @@ import Breakfast from './components/breakfast';
 import Random from './components/random';
 import Menu from './components/menu';
 import About from './components/about';
-
+import 'details-polyfill';
 
 function App() {
   return (
