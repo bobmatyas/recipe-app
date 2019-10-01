@@ -1,5 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import Axios from 'axios';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+`;
 
 
 function FoodTrivia() {
@@ -13,22 +20,19 @@ function FoodTrivia() {
       recipeSearchBase,
     );
     setData(result.data);
-    //console.log(result.data);
   }
 
   useEffect( () => {  
     getRecipes();
   }, []);
 
-  console.log(data);
-
   let foodTrivia = data.text;
 
   return(
-    <div>
+    <StyledDiv>
       <h2>Food Trivia</h2>
       {foodTrivia}
-    </div>
+    </StyledDiv>
   );
 
 }
