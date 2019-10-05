@@ -6,6 +6,10 @@ const StyledDiv = styled.div`
   background-color: green;
   color: #fff;
   padding: 10px;
+
+  @media only screen and (min-width: 600px) {
+    background-color: red;
+  }
 `;
 
 

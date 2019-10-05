@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from './image';
 
 
 const recipeEstimate = (prepTime) => {
@@ -34,7 +35,7 @@ export const RecipeCard = ({  recipe,
     
     <div>
       <h3>{recipe}</h3>
-      <img src={image} alt={recipe} />
+      <Image source={image} altText={recipe} />
 
       <h4>Health</h4>
       <p>Calories: {Math.round(calories)}</p>
