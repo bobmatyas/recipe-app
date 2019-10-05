@@ -1,6 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import Image from './image';
 
+
+const RecipeCardDisplay = styled.div`
+  background-color #fff;
+  border-radius: 5px;
+  box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+  margin: 25px;
+`;
 
 const recipeEstimate = (prepTime) => {
   if (prepTime < 60) 
@@ -22,6 +30,8 @@ const recipeEstimate = (prepTime) => {
   }
 }
 
+
+
 export const RecipeCard = ({  recipe, 
                               image, 
                               sourceOriginal, 
@@ -33,7 +43,7 @@ export const RecipeCard = ({  recipe,
                               prepTime
                             }) => 
     
-    <div>
+    <RecipeCardDisplay>
       <h3>{recipe}</h3>
       <Image source={image} altText={recipe} />
 
@@ -56,6 +66,6 @@ export const RecipeCard = ({  recipe,
         </ul>
       </details>
       <p>Recipe originally appeared on <a href={sourceArchive}>{sourceOriginal}</a></p>
-    </div>
+    </RecipeCardDisplay>
 
 export default RecipeCard;

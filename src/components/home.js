@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomDisplay from './random-display';
+import Random from './random';
 import FoodTrivia from './food-trivia';
 import Search from './search';
 
@@ -14,7 +14,7 @@ export const Home = () =>
 
     <h2>Recipes to Try</h2>
       
-      <RandomDisplay />
+      <Random />
 
   </div>
 
