@@ -1,15 +1,15 @@
 import React from 'react';
-import jsonData from '../data/random.json';
+import soupData from '../data/soup.json';
 import RecipeCard from './recipe-card';
 
-console.log(jsonData);
+console.log(soupData);
 
 function RandomDisplay() { 
 
   return(
     <div>
       
-      {jsonData.hits.map((item, index) => (
+      {soupData.hits.map((item, index) => (
           <RecipeCard
             key={index}
             recipe={item.recipe.label} 
