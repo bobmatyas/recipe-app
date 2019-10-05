@@ -8,13 +8,10 @@ const StyledImage = styled.img`
   width: 200px;
 `;
 
-
 function Image(props) {
-
   return(
     <StyledImage src={props.source} alt={props.altText} />
   );
-
 }
 
 export default Image;

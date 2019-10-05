@@ -15,10 +15,17 @@ const SiteName = styled.h1`
   text-transform: uppercase;
 `;
 
+const LogoHolder = styled.div`
+  margin: 0 auto;
+  width: 105px;
+`;
+
 
 export const Header = () => 
   <StyledHeader>
-    <LogoImage fill="white" width="125" />
+    <LogoHolder>
+      <LogoImage fill="white" width="100" height="100" />
+    </LogoHolder>
     <SiteName>Food Fight</SiteName>
   </StyledHeader>
 

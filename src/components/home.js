@@ -4,13 +4,11 @@ import FoodTrivia from './food-trivia';
 import Search from './search';
 
 export const Home = () => 
-
   <div>
-    <h2>Home</h2>
+
+    <Search />
 
     <FoodTrivia />
-    
-    <Search />
 
     <h2>Recipes to Try</h2>
       

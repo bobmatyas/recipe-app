@@ -1,4 +1,16 @@
 import React, { Component } from 'react';
+import Button from './button';
+import styled from 'styled-components';
+
+const SearchContainer = styled.div`
+  background-color: #a3af9e;
+  padding: 25px;
+  text-align: center;
+`;
+
+const Input = styled.input`
+  font-size: 16px;
+`;
 
 
 class SearchRecipes extends Component {
@@ -20,16 +32,22 @@ class SearchRecipes extends Component {
     }
 
     render() {
-        return(
-            <form className="search-form" onSubmit={this.handleSubmit}>
-                <input type="search"
-                    onChange={this.onSearchChange}
-                    name="search"
-                    ref={(input) => this.query = input}
-                    placeholder="Search..." />
-                <button className="search-button" type="submit" id="submit">Go!</button>
-            </form>
-        );
+      return(
+        <SearchContainer>
+          <form className="search-form" onSubmit={this.handleSubmit}>
+            <Input 
+              type="search"
+              onChange={this.onSearchChange}
+              name="search"
+              ref={(input) => this.query = input}
+              placeholder="Search..." 
+            />
+              
+            <Button type="submit" id="submit" text="Go" />
+          
+          </form>
+        </SearchContainer>
+      );
     }
 }
 
