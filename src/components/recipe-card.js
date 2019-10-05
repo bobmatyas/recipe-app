@@ -8,6 +8,7 @@ const RecipeCardDisplay = styled.div`
   border-radius: 5px;
   box-shadow: rgb(209, 209, 213) 0px 0px 4px;
   margin: 25px;
+  padding: 25px;
 `;
 
 const recipeEstimate = (prepTime) => {

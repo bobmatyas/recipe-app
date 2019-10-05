@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledImage = styled.img`
-  width: 125px;
-
-  @media only screen and (min-width: 600px) {
-    width: 300px;
-  }
+  border: 2px solid #eee;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 200px;
 `;
 
 
