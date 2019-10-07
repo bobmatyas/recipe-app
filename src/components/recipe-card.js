@@ -11,6 +11,19 @@ const RecipeCardDisplay = styled.div`
   padding: 25px;
 `;
 
+const RecipeTitle = styled.h3`
+  color: #0091C3;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: capitalize;
+`;
+
+const IngredientsHeading = styled.h4`
+  margin-left: 10px;
+  margin-top: -10px;
+`;
+
 const recipeEstimate = (prepTime) => {
   if (prepTime < 60) 
     return `${prepTime} mins`;
@@ -45,7 +58,7 @@ export const RecipeCard = ({  recipe,
                             }) => 
     
     <RecipeCardDisplay>
-      <h3>{recipe}</h3>
+      <RecipeTitle>{recipe}</RecipeTitle>
       <Image source={image} altText={recipe} />
 
       <h4>Health</h4>
@@ -59,7 +72,7 @@ export const RecipeCard = ({  recipe,
       </ul>
 
       <details>
-        <summary>Ingredients</summary>
+        <summary><IngredientsHeading>Ingredients</IngredientsHeading></summary>
         <ul>
           {ingredients.map((item, index) => (
             <li key={index}>{item}</li>
