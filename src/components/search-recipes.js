@@ -3,7 +3,7 @@ import Button from './button';
 import styled from 'styled-components';
 
 const SearchContainer = styled.div`
-  background-color: #a3af9e;
+background-image: linear-gradient(to right top, #76c25e, #83be6f, #8fb97f, #99b48f, #a3af9e);
   padding: 25px;
   text-align: center;
 `;

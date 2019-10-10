@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import Axios from 'axios';
 import styled from 'styled-components';
+import {ReactComponent as FactImage} from './../images/fact.svg';
 
-const StyledDiv = styled.div`
-  background-color: green;
+
+const FactHolder = styled.div`
+  background-image: linear-gradient(to right bottom, #05658c, #2b78a0, #438bb4, #599fc9, #6fb3de);
   color: #fff;
   padding: 10px;
 
@@ -12,6 +14,19 @@ const StyledDiv = styled.div`
   }
 `;
 
+const FactHeader = styled.h2`
+  font-size: 2.2rem;
+  padding: 0 5%;
+`;
+
+const Fact = styled.p`
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0 5%;
+`;
+
+const styles = {'float': 'right', 'marginTop': 25+'px'}
 
 function FoodTrivia() {
 
@@ -33,10 +48,12 @@ function FoodTrivia() {
   let foodTrivia = data.text;
 
   return(
-    <StyledDiv>
-      <h2>Food Trivia</h2>
-      {foodTrivia}
-    </StyledDiv>
+    <FactHolder>
+      <FactImage fill="#eeeeee" style={styles} width="100" height="100" />
+      <FactHeader>Did You Know?</FactHeader>
+      <Fact>{foodTrivia}</Fact>
+      
+    </FactHolder>
   );
 
 }
