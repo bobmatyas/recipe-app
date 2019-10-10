@@ -13,11 +13,21 @@ const getRandomBackground = (backgrounds) => {
 }
 
 const SearchContainer = styled.div`
+  align-items: center;
   background-image: url(${getRandomBackground(backgrounds)});
+  background-repeat: repeat-x;
   display: flex;
   height: 200px;
   justify-content: center;
-  text-align: center;
+`;
+
+const FormHolder = styled.div`
+  align-items: center;
+  background-color: rgba(0,0,0, 0.25);
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
 `;
 
 const Form = styled.form`
@@ -28,6 +38,12 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  border: 1px solid #eee;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);
+  -moz-box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);
+  box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);
   color: #666666;
   font-size: 16px;
   height: 40px;
@@ -38,6 +54,7 @@ const Input = styled.input`
 const Label = styled.label`
   display: none;
   font-size: 1.8rem;
+  margin: 0 5px;
 `;
 
 class SearchRecipes extends Component {
@@ -61,6 +78,7 @@ class SearchRecipes extends Component {
     render() {
       return(
         <SearchContainer>
+          <FormHolder>
           <Form onSubmit={this.handleSubmit}>
             <Label htmlFor="search">Search: </Label>
             <Input 
@@ -68,12 +86,13 @@ class SearchRecipes extends Component {
               onChange={this.onSearchChange}
               name="search"
               ref={(input) => this.query = input}
-              placeholder="What are you hungry for?" 
+              placeholder="Search..." 
             />
               
             <Button type="submit" id="submit" text="Go" />
           
           </Form>
+          </FormHolder>
         </SearchContainer>
       );
     }
