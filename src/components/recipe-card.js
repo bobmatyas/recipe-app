@@ -1,28 +1,75 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from './image';
-
+import Ingredients from './ingredients';
+import HealthList from './healthlist';
 
 const RecipeCardDisplay = styled.div`
+  display: grid;
   background-color #fff;
   border-radius: 5px;
   box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows: 275px;
   margin: 25px;
   padding: 25px;
 `;
 
+const RecipeCardImage = styled.div`
+  grid-column: 1;
+  grid-row: 1;
+`;
+
+const RecipeCardTopRight = styled.div`
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0 0 0 25px;
+`;
+
 const RecipeTitle = styled.h3`
-  color: #0091C3;
+  color: #00679c;
   font-size: 2.2rem;
   line-height: 1.4;
-  text-align: center;
+  margin: 0;
+  padding: 0;
   text-transform: capitalize;
 `;
 
-const IngredientsHeading = styled.h4`
-  margin-left: 10px;
-  margin-top: -10px;
+const RecipeCardHealth = styled.div`
+
 `;
+
+const HealthInfo = styled.p`
+  color: #404a3b;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 30px 0;
+`;
+
+const RecipeCardBottom = styled.div`
+  grid-column: 1/3;
+  grid-row: 2;
+`;
+
+const PrepEstimate = styled.p`
+  color: #404a3b;
+  font-size: 1.4rem;
+  text-align: center;
+`;
+
+const Attribution = styled.p`
+  border-top: 2px solid #eee;
+  color: #404a3b;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-top: 50px;
+  padding-top: 10px;
+
+  a {
+    color: #00bfff;
+  }
+`;
+
 
 const recipeEstimate = (prepTime) => {
   if (prepTime < 60) 
@@ -58,28 +105,28 @@ export const RecipeCard = ({  recipe,
                             }) => 
     
     <RecipeCardDisplay>
-      <RecipeTitle>{recipe}</RecipeTitle>
-      <Image source={image} altText={recipe} />
-
-      <h4>Health</h4>
-      <p>Calories: {Math.round(calories)}</p>
-      <p>Servings: {servings}</p>
-      <p>Prep. Time: {prepTime > 0 ? recipeEstimate(prepTime) : 'Not Provided'}</p>
-      <ul>
-          {healthLabels.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-      </ul>
-
-      <details>
-        <summary><IngredientsHeading>Ingredients</IngredientsHeading></summary>
-        <ul>
-          {ingredients.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </details>
-      <p>Recipe originally appeared on <a href={sourceArchive}>{sourceOriginal}</a></p>
+      <RecipeCardImage>
+        <Image source={image} altText={recipe} />
+        <PrepEstimate>Prep. Time: {prepTime > 0 ? recipeEstimate(prepTime) : 'Not Provided'}</PrepEstimate>
+      </RecipeCardImage>
+        
+      <RecipeCardTopRight>
+          <RecipeTitle>{recipe}</RecipeTitle>
+          <RecipeCardHealth>
+            <HealthInfo>Calories: {Math.round(calories)} / Servings: {servings} </HealthInfo>
+            <HealthList healthLabels={healthLabels} />
+          </RecipeCardHealth>
+        </RecipeCardTopRight>
+      
+        <RecipeCardBottom>
+        
+          <Ingredients ingredientsList={ingredients} />
+          
+          <Attribution>
+            Recipe originally appeared on <a href={sourceArchive}>{sourceOriginal}</a>. Vist the source for directions.
+          </Attribution>
+        
+        </RecipeCardBottom>
     </RecipeCardDisplay>
 
 export default RecipeCard;

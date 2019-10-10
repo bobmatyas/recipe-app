@@ -7,7 +7,7 @@ import RecipeCard from './recipe-card';
 function RandomDisplay() { 
 
   const getRandomRecipe = (dataSource) => {
-    return dataSource.hits[Math.floor(Math.random()*dataSource.hits.length-1)];
+    return dataSource.hits[Math.floor(Math.random()*dataSource.hits.length)];
   }
 
   const soup = getRandomRecipe(soupData);

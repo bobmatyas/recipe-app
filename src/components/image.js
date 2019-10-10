@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledImage = styled.img`
   border: 2px solid #eee;
   border-radius: 3px;
-  margin: 0 auto;
+  margin: 0;
   width: 200px;
 `;
 
