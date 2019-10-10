@@ -7,7 +7,7 @@ import {ReactComponent as FactImage} from './../images/fact.svg';
 const FactHolder = styled.div`
   background-image: linear-gradient(to right bottom, #05658c, #2b78a0, #438bb4, #599fc9, #6fb3de);
   color: #fff;
-  padding: 10px;
+  padding: 5%;
 
   @media only screen and (min-width: 600px) {
     background-color: red;
@@ -16,7 +16,7 @@ const FactHolder = styled.div`
 
 const FactHeader = styled.h2`
   font-size: 2.2rem;
-  padding: 0 5%;
+  padding: 0;
 `;
 
 const Fact = styled.p`
@@ -26,7 +26,7 @@ const Fact = styled.p`
   padding: 0 5%;
 `;
 
-const styles = {'float': 'right', 'marginTop': 25+'px'}
+const styles = {'float': 'right', 'marginTop': 55+'px'}
 
 function FoodTrivia() {
 
@@ -49,9 +49,11 @@ function FoodTrivia() {
 
   return(
     <FactHolder>
-      <FactImage fill="#eeeeee" style={styles} width="100" height="100" />
+      <FactImage fill="#eeeeee" style={styles} width="125" height="125" />
       <FactHeader>Did You Know?</FactHeader>
-      <Fact>{foodTrivia}</Fact>
+      <Fact>{foodTrivia}
+        {foodTrivia ? foodTrivia : 'The average American cholesterol level is 210 milligrams per deciliter (mg/dL), which is higher than the medically acceptable range of 150-200 mg/dL. The average cholesterol of a vegan in the US is 146 mg/dL.'}
+      </Fact>
       
     </FactHolder>
   );

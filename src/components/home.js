@@ -1,7 +1,8 @@
 import React from 'react';
-import Random from './random';
+import RandomDisplay from './random-display';
 import FoodTrivia from './food-trivia';
 import Search from './search';
+import SubHeader from './subheader';
 
 export const Home = () => 
   <div>
@@ -10,9 +11,9 @@ export const Home = () =>
 
     <FoodTrivia />
 
-    <h2>Recipes to Try</h2>
+    <SubHeader title="Recipes to Try" description="Random recipes from the collection." />
       
-      <Random />
+      <RandomDisplay />
 
   </div>
 

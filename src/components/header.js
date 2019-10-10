@@ -5,12 +5,14 @@ import {ReactComponent as LogoImage} from './../images/logo-vegan.svg';
 const StyledHeader = styled.header`
   background-color: #404a3b;
   color: #fff;
+  padding: 25px 0;
 `;
 
 const SiteName = styled.h1`
   color: #fff;
+  font-size: 5.2rem;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0;
   text-align: center;
   text-transform: uppercase;
 `;

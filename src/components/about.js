@@ -1,7 +1,8 @@
 import React from 'react';
+import SubHeader from './subheader';
 
 export const About = () => 
 
-  <h2>About</h2>
+  <SubHeader title="About" />
 
 export default About;

@@ -9,7 +9,7 @@ import SugarIcon from './../images/icon-sugar.svg';
 
 const HealthListHolder = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,11 +17,15 @@ const HealthListHolder = styled.ul`
 
 const HealthListItem = styled.li`
   background-color: #76c25e;
-  padding: 5px;
   border-radius: 100%;
+  height: 36px;
+  padding: 0;
+  text-align: center;
+  width: 36px;
 
   img {
-    margin-top: 2px;
+    margin: 3px 0 0 0;
+    padding: 0;
   }
 `;
 
