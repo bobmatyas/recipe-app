@@ -1,17 +1,44 @@
 import React, { Component } from 'react';
 import Button from './button';
 import styled from 'styled-components';
+import SearchBgImage from './../images/search-bg-01.jpg';
+import SearchBgImage2 from './../images/search-bg-02.jpg';
+import SearchBgImage3 from './../images/search-bg-03.jpg';
+import SearchBgImage4 from './../images/search-bg-04.jpg';
+
+const backgrounds = [SearchBgImage, SearchBgImage2, SearchBgImage3, SearchBgImage4];
+
+const getRandomBackground = (backgrounds) => {
+  return backgrounds[Math.floor(Math.random()*backgrounds.length)];
+}
 
 const SearchContainer = styled.div`
-background-image: linear-gradient(to right top, #76c25e, #83be6f, #8fb97f, #99b48f, #a3af9e);
-  padding: 25px;
+  background-image: url(${getRandomBackground(backgrounds)});
+  display: flex;
+  height: 200px;
+  justify-content: center;
   text-align: center;
 `;
 
-const Input = styled.input`
-  font-size: 16px;
+const Form = styled.form`
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 `;
 
+const Input = styled.input`
+  color: #666666;
+  font-size: 16px;
+  height: 40px;
+  margin: 0;
+  padding: 5px 10px;
+`;
+
+const Label = styled.label`
+  display: none;
+  font-size: 1.8rem;
+`;
 
 class SearchRecipes extends Component {
 
@@ -34,18 +61,19 @@ class SearchRecipes extends Component {
     render() {
       return(
         <SearchContainer>
-          <form className="search-form" onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit}>
+            <Label htmlFor="search">Search: </Label>
             <Input 
               type="search"
               onChange={this.onSearchChange}
               name="search"
               ref={(input) => this.query = input}
-              placeholder="Search..." 
+              placeholder="What are you hungry for?" 
             />
               
             <Button type="submit" id="submit" text="Go" />
           
-          </form>
+          </Form>
         </SearchContainer>
       );
     }
