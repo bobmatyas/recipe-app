@@ -8,13 +8,17 @@ const SubHeadingHolder = styled.div`
 `;
 
 const SubHeading = styled.h2`
-  font-size: 2.2rem;
+  color: #212320;
+  font-size: 2.4rem;
   margin: 0;
   padding: 0;
 `;
 
 const Description = styled.p`
+  color: #212320;
   font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
   margin: 15px 0 0 0;
   padding: 0 5%;
 `;
