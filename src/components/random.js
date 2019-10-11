@@ -4,7 +4,7 @@ import SubHeader from './subheader';
 import RandomDisplay from './random-display';
 
 const StyledDiv = styled.div`
-  background-color #f9f9fb;
+  background-color: #f9f9fb;
 `;
 
 
