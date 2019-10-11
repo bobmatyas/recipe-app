@@ -7,7 +7,7 @@ import RecipeCard from './recipe-card';
 function RandomDisplay() { 
 
   const getRandomRecipe = (dataSource) => {
-    return dataSource.hits[Math.floor(Math.random()*dataSource.hits.length-1)];
+    return dataSource.hits[Math.floor(Math.random()*dataSource.hits.length)];
   }
 
   const soup = getRandomRecipe(soupData);
@@ -29,17 +29,7 @@ function RandomDisplay() {
         prepTime={soup.recipe.totalTime}          
       />
 
-      <RecipeCard
-        recipe={cake.recipe.label} 
-        image={cake.recipe.image}
-        sourceOriginal={cake.recipe.source}
-        sourceArchive={cake.recipe.shareAs}
-        healthLabels={cake.recipe.healthLabels}
-        ingredients={cake.recipe.ingredientLines}
-        calories={cake.recipe.calories}
-        servings={cake.recipe.yield}
-        prepTime={cake.recipe.totalTime}          
-      />
+
 
       <RecipeCard
         recipe={tofu.recipe.label} 
@@ -52,6 +42,18 @@ function RandomDisplay() {
         servings={tofu.recipe.yield}
         prepTime={tofu.recipe.totalTime}          
       />
+
+      <RecipeCard
+        recipe={cake.recipe.label} 
+        image={cake.recipe.image}
+        sourceOriginal={cake.recipe.source}
+        sourceArchive={cake.recipe.shareAs}
+        healthLabels={cake.recipe.healthLabels}
+        ingredients={cake.recipe.ingredientLines}
+        calories={cake.recipe.calories}
+        servings={cake.recipe.yield}
+        prepTime={cake.recipe.totalTime}          
+      />  
 
     </div>
   );
