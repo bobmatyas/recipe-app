@@ -5,14 +5,24 @@ import Ingredients from './ingredients';
 import HealthList from './healthlist';
 
 const RecipeCardDisplay = styled.div`
-  display: grid;
   background-color #fff;
   border-radius: 5px;
   box-shadow: rgb(209, 209, 213) 0px 0px 4px;
-  grid-template-columns: 210px 1fr;
-  grid-template-rows: 275px;
   margin: 25px;
   padding: 25px;
+  text-align: center;
+
+  @media (min-width: 550px) {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: 275px;
+    text-align: left;
+  }
+
+  @media (min-width: 800px) {
+    margin: 25px auto;
+    max-width: 800px;
+  }
 `;
 
 const RecipeCardImage = styled.div`
@@ -21,18 +31,28 @@ const RecipeCardImage = styled.div`
 `;
 
 const RecipeCardTopRight = styled.div`
-  grid-column: 2;
-  grid-row: 1;
-  padding: 0 0 0 25px;
+
+  @media (min-width: 550px) {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0 0 0 25px;
+  }
+
 `;
 
 const RecipeTitle = styled.h3`
   color: #00679c;
-  font-size: 2.2rem;
-  line-height: 1.4;
-  margin: 0;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin: 25px 0 15px 0;
   padding: 0;
   text-transform: capitalize;
+
+  @media (min-width: 550px) {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    margin: 0;
+  }
 `;
 
 const RecipeCardHealth = styled.div`
@@ -52,7 +72,7 @@ const RecipeCardBottom = styled.div`
 `;
 
 const PrepEstimate = styled.p`
-  color: #404a3b;
+  color: #666666;
   font-size: 1.4rem;
   text-align: center;
 `;
@@ -64,6 +84,7 @@ const Attribution = styled.p`
   line-height: 1.3;
   margin-top: 50px;
   padding-top: 10px;
+  text-align: left;
 
   a {
     color: #00bfff;

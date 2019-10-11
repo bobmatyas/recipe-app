@@ -7,9 +7,12 @@ const AboutText = styled.div`
   font-size: 1.8rem;
   line-height: 1.6;
   padding: 5%;
+  
 
   p {
+    margin: 0 auto;
     margin-bottom: 50px;
+    max-width: 800px;
   }
 `;
 
