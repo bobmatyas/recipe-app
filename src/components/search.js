@@ -17,11 +17,9 @@ class Search extends Component {
 
 
   performSearch = async (query='vegan') => {
-    console.log(query);
-    const recipeSearchBase = 'https://api.edamam.com/search?app_id=413bfa1c&app_key=a3b6b06160224886fc0b6e8a1a5b822a&health=vegan';
-    
-    const recipeSearchString = `${recipeSearchBase}&q=${query}`
-    console.log(recipeSearchString);    
+
+    const recipeSearchBase = 'https://api.edamam.com/search?app_id=413bfa1c&app_key=a3b6b06160224886fc0b6e8a1a5b822a&health=vegan';    
+    const recipeSearchString = `${recipeSearchBase}&q=${query}`   
     
     Axios.get(recipeSearchString)
       .then((response) => {
@@ -44,7 +42,7 @@ class Search extends Component {
 
     return ( 
       <div>
-        <SearchRecipes onSearch = {this.performSearch} /> 
+        <SearchRecipes onSearch={this.performSearch} /> 
         <div> 
           {
             (this.state.loading) ? '' : <RecipeList results={this.state.results} /> 

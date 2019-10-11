@@ -23,7 +23,7 @@ const styles = {'float': 'right', 'marginRight': 35+'px'}
 
 export const SubHeader = ({title, description}) => 
   <SubHeadingHolder>
-    {description ? <CookingIcon fill="#666666" style={styles} /> : ''}
+    {description ? <CookingIcon fill="#eeeeee" style={styles} /> : ''}
     <SubHeading>{title}</SubHeading>
     {description ? <Description>{description}</Description> : ''}
   </SubHeadingHolder>
