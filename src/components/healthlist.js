@@ -9,10 +9,16 @@ import SugarIcon from './../images/icon-sugar.svg';
 
 const HealthListHolder = styled.ul`
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
-  margin: 0;
+  margin: 25px auto;
   padding: 0;
+
+  @media (min-width: 550px) {
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+  }
 `;
 
 const HealthListItem = styled.li`

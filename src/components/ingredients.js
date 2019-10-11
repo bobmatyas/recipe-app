@@ -9,17 +9,24 @@ const IngredientsHeader = styled.summary`
   color: #0091C3;
   display: flex;
   font-size: 2.2rem;
+  margin: 50px 0 0 0;
   padding: 10px 0 10px 0;
 
   :hover {
     cursor: pointer;
     border-bottom: 4px solid #ccc;
   }
+
+  @media (min-width: 550px) {
+    margin: 0;
+  }
+
 `;
 
 const IngredientsHeaderInner = styled.h4`
   font-size: 2.2rem;
   margin: 0;
+  text-align: left;
   width: 90%;
 `;
 
@@ -34,6 +41,7 @@ const IngredientsListingItem = styled.li`
   line-height: 1.6;
   margin: 25px 0;
   padding: 0 15px;
+  text-align: left;
 `;
 
 export const Ingredients = ({ingredientsList}) => 

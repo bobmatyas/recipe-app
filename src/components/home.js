@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 import RandomDisplay from './random-display';
 import FoodTrivia from './food-trivia';
 import Search from './search';
 import SubHeader from './subheader';
 
+const HomeHolder = styled.div`
+  background-color: #f9f9fb;
+`;
+
 export const Home = () => 
-  <div>
+  <HomeHolder>
 
     <Search />
 
@@ -13,8 +18,8 @@ export const Home = () =>
 
     <SubHeader title="Recipes to Try" description="Random recipes from the collection." />
       
-      <RandomDisplay />
+    <RandomDisplay />
 
-  </div>
+  </HomeHolder>
 
 export default Home;

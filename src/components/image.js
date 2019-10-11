@@ -5,7 +5,11 @@ const StyledImage = styled.img`
   border: 2px solid #eee;
   border-radius: 3px;
   margin: 0;
-  width: 200px;
+  width: 225px;
+
+  @media (min-width: 550px) {
+    width: 200px;
+  }
 `;
 
 function Image(props) {
