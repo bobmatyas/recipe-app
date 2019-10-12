@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/recipe-app/static/css/main.bde39556.chunk.css",
+    "main.js": "/recipe-app/static/js/main.2cf17002.chunk.js",
+    "main.js.map": "/recipe-app/static/js/main.2cf17002.chunk.js.map",
+    "runtime-main.js": "/recipe-app/static/js/runtime-main.8d63ef22.js",
+    "runtime-main.js.map": "/recipe-app/static/js/runtime-main.8d63ef22.js.map",
+    "static/js/2.2ad02e3b.chunk.js": "/recipe-app/static/js/2.2ad02e3b.chunk.js",
+    "static/js/2.2ad02e3b.chunk.js.map": "/recipe-app/static/js/2.2ad02e3b.chunk.js.map",
+    "index.html": "/recipe-app/index.html",
+    "precache-manifest.31af023f744a96f2dd9e5f8fe9c7e5c9.js": "/recipe-app/precache-manifest.31af023f744a96f2dd9e5f8fe9c7e5c9.js",
+    "service-worker.js": "/recipe-app/service-worker.js",
+    "static/css/main.bde39556.chunk.css.map": "/recipe-app/static/css/main.bde39556.chunk.css.map",
+    "static/media/fact.9ef40c43.svg": "/recipe-app/static/media/fact.9ef40c43.svg",
+    "static/media/icon-alcohol.svg": "/recipe-app/static/media/icon-alcohol.d3971c33.svg",
+    "static/media/icon-check.svg": "/recipe-app/static/media/icon-check.8450c46b.svg",
+    "static/media/icon-cooking.add7cd60.svg": "/recipe-app/static/media/icon-cooking.add7cd60.svg",
+    "static/media/icon-nut.svg": "/recipe-app/static/media/icon-nut.4dc9fe79.svg",
+    "static/media/icon-peanuts.svg": "/recipe-app/static/media/icon-peanuts.ee831d38.svg",
+    "static/media/icon-sugar.svg": "/recipe-app/static/media/icon-sugar.9f22b659.svg",
+    "static/media/icon-vegan.svg": "/recipe-app/static/media/icon-vegan.ef868f25.svg",
+    "static/media/icon-vegetarian.svg": "/recipe-app/static/media/icon-vegetarian.a32fcd82.svg",
+    "static/media/ingredients.4a00cc69.svg": "/recipe-app/static/media/ingredients.4a00cc69.svg",
+    "static/media/logo-vegan.7d74d54e.svg": "/recipe-app/static/media/logo-vegan.7d74d54e.svg",
+    "static/media/search-bg-01.jpg": "/recipe-app/static/media/search-bg-01.84e81ffe.jpg",
+    "static/media/search-bg-02.jpg": "/recipe-app/static/media/search-bg-02.9a25eded.jpg",
+    "static/media/search-bg-03.jpg": "/recipe-app/static/media/search-bg-03.c21e6953.jpg",
+    "static/media/search-bg-04.jpg": "/recipe-app/static/media/search-bg-04.a4672f27.jpg",
+    "static/media/search.d36f5532.svg": "/recipe-app/static/media/search.d36f5532.svg"
+  }
+}
