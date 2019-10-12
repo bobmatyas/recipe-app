@@ -17,9 +17,9 @@ function App() {
       <Header />
 
       <main>
-        <Route exact path="/" component={Home} />
-        <Route path="/random" component={Random} />
-        <Route path="/about" component={About} />
+        <Route exact path="{process.env.PUBLIC_URL + '/'}" component={Home} />
+        <Route path="{process.env.PUBLIC_URL + '/random'}" component={Random} />
+        <Route path="{process.env.PUBLIC_URL + '/about'}" component={About} />
         
         <Menu />
       </main>
