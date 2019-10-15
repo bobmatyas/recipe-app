@@ -26,7 +26,7 @@ const FormHolder = styled.div`
   background-color: rgba(0,0,0, 0.25);
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 25px 0;
   width: 100%;
 `;
 

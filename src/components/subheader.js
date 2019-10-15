@@ -28,7 +28,7 @@ const imageStyles = {
   'marginRight': 35+'px', 
   'marginLeft': 'auto', 
   'marginTop': '0', 
-  'marginRight': '0'
+  'marginBottom': '0'
 }
 
 export const SubHeader = ({title, description}) => 
