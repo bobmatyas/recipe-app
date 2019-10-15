@@ -5,6 +5,7 @@ import RandomDisplay from './random-display';
 
 const StyledDiv = styled.div`
   background-color: #f9f9fb;
+  padding-bottom: 100px;
 `;
 
 

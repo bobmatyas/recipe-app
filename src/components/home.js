@@ -7,6 +7,7 @@ import SubHeader from './subheader';
 
 const HomeHolder = styled.div`
   background-color: #f9f9fb;
+  padding-bottom: 100px;
 `;
 
 export const Home = () => 

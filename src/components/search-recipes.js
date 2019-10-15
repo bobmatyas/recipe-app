@@ -26,7 +26,7 @@ const FormHolder = styled.div`
   background-color: rgba(0,0,0, 0.25);
   display: flex;
   justify-content: center;
-  padding: 25px;
+  padding: 25px 0;
   width: 100%;
 `;
 
@@ -58,6 +58,11 @@ const Input = styled.input`
   height: 40px;
   margin: 0;
   padding: 5px 10px;
+
+  @media (min-width: 550px) {
+    width: 475px;
+  }
+
 `;
 
 const Label = styled.label`

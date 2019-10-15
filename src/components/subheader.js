@@ -4,7 +4,7 @@ import {ReactComponent as CookingIcon} from './../images/icon-cooking.svg';
 
 const SubHeadingHolder = styled.div`
   background-image: linear-gradient(to left bottom, #ebd06a, #f1d171, #f6d378, #fbd480, #ffd687);
-  padding: 5%;
+  padding: 25px 5%;
 `;
 
 const SubHeading = styled.h2`
@@ -28,7 +28,7 @@ const imageStyles = {
   'marginRight': 35+'px', 
   'marginLeft': 'auto', 
   'marginTop': '0', 
-  'marginRight': '0'
+  'marginBottom': '0'
 }
 
 export const SubHeader = ({title, description}) => 

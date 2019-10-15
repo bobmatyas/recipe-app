@@ -6,6 +6,10 @@ const StyledHeader = styled.header`
   background-color: #404a3b;
   color: #fff;
   padding: 25px 0;
+
+  @media (min-width: 550px) {
+    margin-top: 75px;
+  }
 `;
 
 const SiteName = styled.h1`
