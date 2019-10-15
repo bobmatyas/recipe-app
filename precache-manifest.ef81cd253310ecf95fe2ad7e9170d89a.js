@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ef35086e1a9054dec5ec89528427b2a",
+    "revision": "92d47201369e6600b30c1fb8bb7c21a4",
     "url": "/recipe-app/index.html"
   },
   {
-    "revision": "84819b5a0d8a031d9b47",
+    "revision": "733a3d171140fd9e03e2",
     "url": "/recipe-app/static/css/main.bde39556.chunk.css"
   },
   {
-    "revision": "03924fc8c437073021ca",
-    "url": "/recipe-app/static/js/2.b1ddab42.chunk.js"
+    "revision": "e80689aeb9bd7f81a36b",
+    "url": "/recipe-app/static/js/2.a680b592.chunk.js"
   },
   {
-    "revision": "84819b5a0d8a031d9b47",
-    "url": "/recipe-app/static/js/main.a8ac8365.chunk.js"
+    "revision": "733a3d171140fd9e03e2",
+    "url": "/recipe-app/static/js/main.79be31f0.chunk.js"
   },
   {
     "revision": "4913b77c6635ff050728",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9ef40c43cdb3f3db0825d697074458aa",
     "url": "/recipe-app/static/media/fact.9ef40c43.svg"
+  },
+  {
+    "revision": "245b950ebc8593fc36760020e4f2049f",
+    "url": "/recipe-app/static/media/icon-about.245b950e.svg"
   },
   {
     "revision": "d3971c339ee220a235f01eff50b12454",
@@ -36,12 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recipe-app/static/media/icon-cooking.add7cd60.svg"
   },
   {
+    "revision": "29673e9597e4f5c177a57a635283a31f",
+    "url": "/recipe-app/static/media/icon-home.29673e95.svg"
+  },
+  {
     "revision": "4dc9fe792b1e6e6038349a9d966939a7",
     "url": "/recipe-app/static/media/icon-nut.4dc9fe79.svg"
   },
   {
     "revision": "ee831d38ffc5f47906c03f51ae2ed63d",
     "url": "/recipe-app/static/media/icon-peanuts.ee831d38.svg"
+  },
+  {
+    "revision": "9ed682df25cbae7a371c0cca73c88cc3",
+    "url": "/recipe-app/static/media/icon-random.9ed682df.svg"
   },
   {
     "revision": "9f22b6591e5511bd27a84eabbc62b044",
