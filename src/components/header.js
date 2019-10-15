@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
 
 const SiteName = styled.h1`
   color: #fff;
-  font-family: 'Righteous', cursive;
+  font-family: 'Righteous', Arial, sans-serif;
   font-size: 5.2rem;
   margin: 0 auto;
   padding: 0;

@@ -5,8 +5,10 @@ import {ReactComponent as SearchIcon} from './../images/search.svg';
 const StyledButton = styled.button`
   background-color: #404a3b;
   border: 1px solid #404a3b;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   -webkit-box-shadow: 5px 4px 35px -1px rgba(0,0,0,0.24);
   -moz-box-shadow: 5px 4px 35px -1px rgba(0,0,0,0.24);
   box-shadow: 5px 4px 35px -1px rgba(0,0,0,0.24);

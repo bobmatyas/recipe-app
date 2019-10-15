@@ -27,7 +27,7 @@ const IngredientsHeaderInner = styled.h4`
   font-size: 2.2rem;
   margin: 0;
   text-align: left;
-  width: 90%;
+  width: 100%;
 `;
 
 const IngredientsListing = styled.ul`
@@ -44,11 +44,14 @@ const IngredientsListingItem = styled.li`
   text-align: left;
 `;
 
+const ingredientsIconStyles = {
+  'float': 'right'
+}
 export const Ingredients = ({ingredientsList}) => 
   <details>
     <IngredientsHeader>
       <IngredientsHeaderInner>Ingredients</IngredientsHeaderInner> 
-      <IngredientsIcon width="25" height="25" />
+      <IngredientsIcon width="25" height="25" styles={ingredientIconStyles} />
     </IngredientsHeader>
 
     <IngredientsListing>

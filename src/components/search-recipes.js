@@ -39,8 +39,17 @@ const Form = styled.form`
 
 const Input = styled.input`
   border: 1px solid #eee;
-  border-top-left-radius: 5px;
+  border-radius: 0;
+  -webkit-appearance: none; 
+  -webkit-border-radius:0;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 0;
   border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;   
   -webkit-box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);
   -moz-box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);
   box-shadow: -3px -6px 12px -1px rgba(0,0,0,0.24);

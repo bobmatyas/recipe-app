@@ -23,11 +23,17 @@ const Description = styled.p`
   padding: 0 5%;
 `;
 
-const styles = {'float': 'right', 'marginRight': 35+'px'}
+const imageStyles = {
+  'float': 'right', 
+  'marginRight': 35+'px', 
+  'marginLeft': 'auto', 
+  'marginTop': '0', 
+  'marginRight': '0'
+}
 
 export const SubHeader = ({title, description}) => 
   <SubHeadingHolder>
-    {description ? <CookingIcon fill="#eeeeee" style={styles} /> : ''}
+    {description ? <CookingIcon fill="#212320" style={imageStyles} /> : ''}
     <SubHeading>{title}</SubHeading>
     {description ? <Description>{description}</Description> : ''}
   </SubHeadingHolder>
