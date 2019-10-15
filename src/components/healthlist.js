@@ -25,6 +25,7 @@ const HealthListItem = styled.li`
   background-color: #76c25e;
   border-radius: 100%;
   height: 36px;
+  margin: 1px;
   padding: 0;
   text-align: center;
   width: 36px;
