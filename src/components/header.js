@@ -13,7 +13,7 @@ const SiteName = styled.h1`
   font-family: 'Righteous', Arial, sans-serif;
   font-size: 5.2rem;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 5%;
   text-align: center;
   text-transform: uppercase;
 `;

@@ -51,7 +51,7 @@ export const Ingredients = ({ingredientsList}) =>
   <details>
     <IngredientsHeader>
       <IngredientsHeaderInner>Ingredients</IngredientsHeaderInner> 
-      <IngredientsIcon width="25" height="25" styles={ingredientIconStyles} />
+      <IngredientsIcon width="25" height="25" styles={ingredientsIconStyles} />
     </IngredientsHeader>
 
     <IngredientsListing>
