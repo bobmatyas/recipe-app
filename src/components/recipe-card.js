@@ -59,12 +59,23 @@ const RecipeCardHealth = styled.div`
 
 `;
 
-const HealthInfo = styled.p`
+const HealthInfo = styled.ul`
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+`;
+
+const HealthInfoItem = styled.li`
   color: #404a3b;
   font-size: 1.8rem;
   font-weight: 600;
-  margin: 30px 0;
-`;
+  margin: 0 0 5px 0;
+  
+  @media (min-width: 550px) {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+  `;
 
 const RecipeCardBottom = styled.div`
   grid-column: 1/3;
@@ -134,7 +145,10 @@ export const RecipeCard = ({  recipe,
       <RecipeCardTopRight>
           <RecipeTitle>{recipe}</RecipeTitle>
           <RecipeCardHealth>
-            <HealthInfo>Calories: {Math.round(calories)} / Servings: {servings} </HealthInfo>
+            <HealthInfo>
+              <HealthInfoItem>Calories: {Math.round(calories)}</HealthInfoItem>
+              <HealthInfoItem>Servings: {servings}</HealthInfoItem> 
+            </HealthInfo>
             <HealthList healthLabels={healthLabels} />
           </RecipeCardHealth>
         </RecipeCardTopRight>
