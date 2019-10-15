@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import './styles/App.scss';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -11,15 +11,15 @@ import 'details-polyfill';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
     <div className="App">
 
       <Header />
 
       <main>
-        <Route exact path="{process.env.PUBLIC_URL + '/'}" component={Home} />
-        <Route path="{process.env.PUBLIC_URL + '/random'}" component={Random} />
-        <Route path="{process.env.PUBLIC_URL + '/about'}" component={About} />
+        <Route exact path="/" component={Home} />
+        <Route path="/random" component={Random} />
+        <Route path="/about" component={About} />
         
         <Menu />
       </main>
